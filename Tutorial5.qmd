@@ -5,3 +5,13 @@ date: 10 April 2024
 format: 
     html: default
 ---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+
+data(package = "palmerpenguins")
+
+ggplot(penguins, aes(x = bill_depth_mm, y = flipper_length_mm, color = species)) +
+    geom_point()
+```
